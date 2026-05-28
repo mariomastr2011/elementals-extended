@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "elementals-extended",
+	"version": "1.0.0",
+	"name": "Elementals Extended",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/elementals-extended/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mariomastr.elementalsexenteded.ElementalsExtended"
+		],
+		"client": [
+			"mariomastr.elementalsexenteded.client.ElementalsExtendedClient"
+		],
+		"fabric-datagen": [
+			"mariomastr.elementalsexenteded.client.ElementalsExtendedDataGenerator"
+		]
+	},
+	"mixins": [
+		"elementals-extended.mixins.json",
+		{
+			"config": "elementals-extended.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
