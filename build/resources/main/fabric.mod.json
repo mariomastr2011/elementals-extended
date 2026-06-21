@@ -16,22 +16,15 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"mariomastr.elementalsexenteded.ElementalsExtended"
+			"mariomastr.elementalsextended.ElementalsExtended"
 		],
 		"client": [
-			"mariomastr.elementalsexenteded.client.ElementalsExtendedClient"
+			"mariomastr.elementalsextended.client.ElementalsExtendedClient"
 		],
 		"fabric-datagen": [
-			"mariomastr.elementalsexenteded.client.ElementalsExtendedDataGenerator"
+			"mariomastr.elementalsextended.client.datagen.ElementalsExtendedDataGenerator"
 		]
 	},
-	"mixins": [
-		"elementals-extended.mixins.json",
-		{
-			"config": "elementals-extended.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
 		"minecraft": "~1.21.11",

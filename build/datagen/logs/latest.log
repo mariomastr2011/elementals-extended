@@ -1,5 +1,5 @@
-[15:07:04] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.11 with Fabric Loader 0.19.2
-[15:07:04] [main/INFO] (FabricLoader) Loading 51 mods:
+[20:45:36] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.11 with Fabric Loader 0.19.2
+[20:45:36] [main/INFO] (FabricLoader) Loading 51 mods:
 	- elementals-extended 1.0.0
 	- fabric-api 0.141.4+1.21.11
 	- fabric-api-base 1.0.5+4ebb5c083e
@@ -48,32 +48,39 @@
 	- fabric-transfer-api-v1 6.0.25+4fc5413f3e
 	- fabric-transitive-access-wideners-v1 7.1.0+014c8cec3e
 	- fabricloader 0.19.2
-	- java 25
+	- java 21
 	- minecraft 1.21.11
 	- mixinextras 0.5.4
-[15:07:04] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/mariomastr/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.2+mixin.0.8.7/edf98d1d98229e46e36c61774ae2b54dcd852981/sponge-mixin-0.17.2+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[15:07:04] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[15:07:04] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[15:07:05] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
-[15:07:05] [Datafixer Bootstrap/INFO] (Minecraft) 287 Datafixer optimizations took 253 milliseconds
-[15:07:08] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[15:07:08] [Render thread/INFO] (Minecraft) Setting user: Player142
-[15:07:08] [Render thread/INFO] (elementals-extended) Initializing items...
-[15:07:09] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[15:07:09] [Download-2/ERROR] (Minecraft) Failed to fetch user properties
+[20:45:36] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/mariomastr/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.2+mixin.0.8.7/edf98d1d98229e46e36c61774ae2b54dcd852981/sponge-mixin-0.17.2+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[20:45:37] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[20:45:37] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[20:45:37] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.4).
+[20:45:38] [Datafixer Bootstrap/INFO] (Minecraft) 287 Datafixer optimizations took 257 milliseconds
+[20:45:41] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[20:45:41] [Render thread/INFO] (Minecraft) Setting user: Player613
+[20:45:41] [Render thread/INFO] (elementals-extended) Initializing items...
+[20:45:41] [Render thread/INFO] (elementals-extended) Initializing blocks...
+[20:45:41] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[20:45:42] [Download-2/ERROR] (Minecraft) Failed to fetch user properties
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at knot//com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:59)
 	at knot//com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:150)
-	at knot//net.minecraft.client.Minecraft.method_55608(Minecraft.java:457)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
+	at knot//net.minecraft.client.Minecraft.method_55608(Minecraft.java:450)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
 	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:103)
 	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56)
 	at knot//com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:121)
 	... 5 more
-[15:07:09] [Render thread/INFO] (FabricDataGenHelper) Running data generator for elementals-extended
-[15:07:09] [Render thread/INFO] (Minecraft) All providers took: 0 ms
-[15:07:09] [Render thread/INFO] (Minecraft) Caching: total files: 0, old count: 0, new count: 1, removed stale: 0, written: 0
+[20:45:42] [Render thread/INFO] (FabricDataGenHelper) Running data generator for elementals-extended
+[20:45:42] [Render thread/INFO] (Minecraft) Starting provider: Elementals Extended/Language (en_us)
+[20:45:42] [Render thread/INFO] (Minecraft) Elementals Extended/Language (en_us) finished after 234 ms
+[20:45:42] [Render thread/INFO] (Minecraft) Starting provider: Elementals Extended/Model Definitions
+[20:45:42] [Render thread/INFO] (Minecraft) Elementals Extended/Model Definitions finished after 38 ms
+[20:45:42] [Render thread/INFO] (Minecraft) Starting provider: Elementals Extended/
+[20:45:42] [Render thread/INFO] (Minecraft) Elementals Extended/ finished after 23 ms
+[20:45:42] [Render thread/INFO] (Minecraft) All providers took: 297 ms
+[20:45:42] [Render thread/INFO] (Minecraft) Caching: total files: 17, old count: 17, new count: 18, removed stale: 0, written: 1
