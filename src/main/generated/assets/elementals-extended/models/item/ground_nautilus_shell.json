@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "elementals-extended:item/ground_nautilus_shell"
+  }
+}

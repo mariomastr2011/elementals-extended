@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "elementals-extended:ground_nautilus_shell",
+    "R": "elementals-extended:tide_rod"
+  },
+  "pattern": [
+    " G ",
+    "GRG",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "elementals-extended:infused_tide_rod"
+  }
+}
