@@ -9,6 +9,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
 
 import java.util.function.Function;
 
@@ -16,6 +17,7 @@ public class EeItems {
     public static final Item TIDE_ROD = register("tide_rod", Item::new, new Item.Properties());
     public static final Item INFUSED_TIDE_ROD = register("infused_tide_rod", Item::new, new Item.Properties());
     public static final Item GROUND_NAUTILUS_SHELL = register("ground_nautilus_shell", Item::new, new Item.Properties());
+    public static final Item HAMMER = register("hammer", HammerItem::new, new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 15f, -3.5f));
 
     public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         ResourceKey<Item> itemKey = ResourceKey.create(
@@ -35,6 +37,16 @@ public class EeItems {
                         creativeTab.accept(EeItems.TIDE_ROD);
                         creativeTab.accept(EeItems.INFUSED_TIDE_ROD);
                         creativeTab.accept(EeItems.GROUND_NAUTILUS_SHELL);
+                });
+
+         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                 .register((creativeTab) -> {
+                     creativeTab.accept(EeItems.HAMMER);
+                 });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT)
+                .register((creativeTab) -> {
+                    creativeTab.accept(EeItems.HAMMER);
                 });
     }
 }

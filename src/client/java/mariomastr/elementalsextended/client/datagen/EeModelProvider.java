@@ -24,5 +24,6 @@ public class EeModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(EeItems.TIDE_ROD, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(EeItems.INFUSED_TIDE_ROD, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(EeItems.GROUND_NAUTILUS_SHELL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(EeItems.HAMMER, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }
