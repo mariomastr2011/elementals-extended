@@ -1,7 +1,7 @@
 package mariomastr.elementalsextended.block;
 
 import mariomastr.elementalsextended.ElementalsExtended;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -51,9 +51,10 @@ public class EeBlocks {
     }
 
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register((itemGroup) -> {
-            itemGroup.accept(EeBlocks.POLISHED_PRISMARINE.asItem());
-            itemGroup.accept(EeBlocks.CHISELED_PRISMARINE.asItem());
-        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
+                .register((creativeTab) -> {
+                    creativeTab.accept(EeBlocks.POLISHED_PRISMARINE.asItem());
+                    creativeTab.accept(EeBlocks.CHISELED_PRISMARINE.asItem());
+            });
     }
 }

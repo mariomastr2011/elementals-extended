@@ -1,7 +1,7 @@
 package mariomastr.elementalsextended.item;
 
 import mariomastr.elementalsextended.ElementalsExtended;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -30,11 +30,11 @@ public class EeItems {
     }
 
     public static void initialize(){
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS)
-                .register((itemGroup) -> {
-                        itemGroup.accept(EeItems.TIDE_ROD);
-                        itemGroup.accept(EeItems.INFUSED_TIDE_ROD);
-                        itemGroup.accept(EeItems.GROUND_NAUTILUS_SHELL);
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
+                .register((creativeTab) -> {
+                        creativeTab.accept(EeItems.TIDE_ROD);
+                        creativeTab.accept(EeItems.INFUSED_TIDE_ROD);
+                        creativeTab.accept(EeItems.GROUND_NAUTILUS_SHELL);
                 });
     }
 }

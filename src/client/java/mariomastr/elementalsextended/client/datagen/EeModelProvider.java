@@ -3,13 +3,13 @@ package mariomastr.elementalsextended.client.datagen;
 import mariomastr.elementalsextended.block.EeBlocks;
 import mariomastr.elementalsextended.item.EeItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
 
 public class EeModelProvider extends FabricModelProvider {
-    public EeModelProvider(FabricDataOutput output) {
+    public EeModelProvider(FabricPackOutput output) {
         super(output);
     }
 
