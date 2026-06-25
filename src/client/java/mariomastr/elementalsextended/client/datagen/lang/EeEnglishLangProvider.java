@@ -20,7 +20,7 @@ public class EeEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add(EeItems.TIDE_ROD, "Tide Rod");
         translationBuilder.add(EeItems.INFUSED_TIDE_ROD, "Infused Tide Rod");
         translationBuilder.add(EeItems.GROUND_NAUTILUS_SHELL, "Ground Nautilus Shell");
-        translationBuilder.add(EeItems.HAMMER, "Hammer");
+        translationBuilder.add(EeItems.HAMMER, "Sledgehammer");
 
         translationBuilder.add(EeBlocks.POLISHED_PRISMARINE.asItem(), "Polished Prismarine");
         translationBuilder.add(EeBlocks.CHISELED_PRISMARINE.asItem(), "Chiseled Prismarine");

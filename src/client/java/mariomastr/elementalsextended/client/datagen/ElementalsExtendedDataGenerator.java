@@ -1,6 +1,7 @@
 package mariomastr.elementalsextended.client.datagen;
 
 import mariomastr.elementalsextended.client.datagen.lang.EeEnglishLangProvider;
+import mariomastr.elementalsextended.client.datagen.tags.EeItemTagsProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -12,5 +13,6 @@ public class ElementalsExtendedDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(EeEnglishLangProvider::new);
 		pack.addProvider(EeModelProvider::new);
 		pack.addProvider(EeRecipeProvider::new);
+		pack.addProvider(EeItemTagsProvider::new);
 	}
 }
